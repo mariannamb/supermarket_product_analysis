@@ -1,6 +1,6 @@
 # 👋🏼 Introduction
 
-This project I worked on analyzes the sales performance of product lines in a supermarket, treating each product line as a distinct marketing campaign. By leveraging SQL for data analysis and Tableau for visualization, the project provides actionable insights into revenue trends and regional performance. The resulting dashboard I created highlights key metrics and trends to inform data-driven marketing decisions.
+This project I worked on analyzes the sales performance of product lines in a supermarket, treating each product line as a distinct marketing campaign. By leveraging SQL for data analysis and Tableau for visualization, the project provides actionable insights into revenue trends and regional performance. The resulting dashboard I created highlights key metrics and trends to inform data-driven marketing decisions. **The dashboard can be viewed [here](https://public.tableau.com/views/SupermarketProductLinePerformance/SupermarketProductLinePerformance?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).**
 
 The dataset I used was sourced on Kaggle and can be found [here](https://www.kaggle.com/datasets/aungpyaeap/supermarket-sales).
 
