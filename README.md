@@ -38,7 +38,7 @@ ORDER BY Total_Revenue DESC;
 ```
 
 I visualized my results in bar charts using Tableau:
-![Bar Charts of Totals](barchart_totals.png)
+![Bar Charts of Totals](images/barchart_totals.png)
 
 I noticed that while electronic accessories had the highest quantity sold, it still ranked third in revenue.
 
@@ -67,13 +67,13 @@ ORDER BY City, Total_Revenue DESC;
 ```
 
 When looking at total revenue across all cities, Naypyitaw took the lead, while Yangon and Mandalay performed similarly.
-![Bar Chart of Total Sales by City](barchart_totalsales.png)
+![Bar Chart of Total Sales by City](images/barchart_totalsales.png)
 
 To visualize product line performance per city, I used a donut chart and a bar chart filtered by product line. Earlier, I saw that food and beverages had the highest sales. So let's look at its performance per city:
-![Charts of Food and Beverages](donutbar_foodandbev.png)
+![Charts of Food and Beverages](images/donutbar_foodandbev.png)
 It turns out that 42% of food and beverage sales also came from the top performing city, Naypyitaw.
 I also discovered earlier that health and beauty had the lowest sales. So let's take a look at how it performed per city:
-![Charts of Health and Beauty](donutbar_healthandbeauty.png)
+![Charts of Health and Beauty](images/donutbar_healthandbeauty.png)
 Mandalay clearly outperformed the other two cities in health and beauty sales. More marketing efforts focused on health and beauty products would help boost sales in Naypyitaw and Yangon.
 
 ### 3. Are there seasonal or weekly trends in revenue?
@@ -120,11 +120,13 @@ ORDER BY product_line, Total_Revenue DESC;
 ```
 
 Looking at the week trend, I found that sales were generally highest on Tuesdays and Saturdays. During Q1, total sales peaked in January and had a low dip in February.
-![Line Graphs of Trends](linegraphs_all.png)
+![Line Graphs of Trends](images/linegraphs_all.png)
 
 I also filtered it per product line to visualize the trends for different product categories. Let's look at electronic accessories:
-![Line Graph of Electronic Accessories](linegraphs_electronicaccessories.png)
+![Line Graph of Electronic Accessories](images/linegraphs_electronicaccessories.png)
 For Q1, this product line didn't show any relevant peaks or dips. Throughout the week, it has its highest performance on Tuesdays and Thursdays. This showed me that each product line differs in its peak seasons. Marketing campaigns could be done to boost sales during off seasons.
+
+### **All of my code can be viewed [here](supermarket_analysis/4_analyze.sql) and all the visualizations are on my Tableau dashboard linked in the introduction.**
 
 # 💡 Key Findings
 **1. Revenue Distribution vs. Quantity Sold**
