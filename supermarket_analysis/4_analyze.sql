@@ -1,9 +1,7 @@
---Total Revenue and Income--
+--Total Revenue--
 SELECT 
     SUM(Total) AS Total_Revenue, 
-    SUM(Quantity) AS Total_Quantity, 
-    SUM(Gross_Income) AS Total_Gross_Income,
-    AVG(Gross_Income / Total) * 100 AS Avg_Gross_Margin_Percentage
+    SUM(Quantity) AS Total_Quantity
 FROM supermarket_sales;
 
 
@@ -11,9 +9,7 @@ FROM supermarket_sales;
 SELECT 
     Product_Line, 
     SUM(Total) AS Total_Revenue, 
-    SUM(Quantity) AS Total_Quantity, 
-    SUM(Gross_Income) AS Total_Gross_Income,
-    AVG(Gross_Income / Total) * 100 AS Avg_Gross_Margin_Percentage
+    SUM(Quantity) AS Total_Quantity
 FROM supermarket_sales
 GROUP BY Product_Line
 ORDER BY Total_Revenue DESC; 
@@ -21,8 +17,7 @@ ORDER BY Total_Revenue DESC;
 --City Performance--
 SELECT 
     City,
-    SUM(Total) AS Total_Revenue, 
-    SUM(Gross_Income) AS Total_Gross_Income
+    SUM(Total) AS Total_Revenue
 FROM supermarket_sales
 GROUP BY City
 ORDER BY Total_Revenue DESC;
@@ -33,8 +28,7 @@ SELECT
     city, 
     Product_Line, 
     SUM(Total) AS Total_Revenue, 
-    SUM(Quantity) AS Total_Quantity, 
-    SUM(Gross_Income) AS Total_Gross_Income
+    SUM(Quantity) AS Total_Quantity
 FROM supermarket_sales
 GROUP BY City, Product_Line
 ORDER BY City, Total_Revenue DESC;
@@ -54,7 +48,7 @@ SELECT
     SUM(Total) AS Total_Revenue
 FROM supermarket_sales
 GROUP BY product_line, Day_Of_Week
-ORDER BY product_line;
+ORDER BY product_line, Total_Revenue DESC;
 
 
 --Revenue by Month--
