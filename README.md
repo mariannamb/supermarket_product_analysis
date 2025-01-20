@@ -67,6 +67,7 @@ ORDER BY City, Total_Revenue DESC;
 ```
 
 When looking at total revenue across all cities, Naypyitaw took the lead, while Yangon and Mandalay performed similarly.
+
 ![Bar Chart of Total Sales by City](images/barchart_totalsales.png)
 
 To visualize product line performance per city, I used a donut chart and a bar chart filtered by product line. Earlier, I saw that food and beverages had the highest sales. So let's look at its performance per city:
